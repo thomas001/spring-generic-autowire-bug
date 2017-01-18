@@ -50,8 +50,13 @@ public class SpringGenericAutowireBugApplication {
 	}
 
 	@Bean
-	public FooBeanCollector fooBeanCollector2() {
+	public FooBeanCollector fooBeanCollectorExtraClass() {
 		return new FooBeanCollector();
+	}
+
+	@Bean
+	public FooBaseBeanCollector fooBaseBeanCollectorExtraClass() {
+		return new FooBaseBeanCollector();
 	}
 
 	public static void main(String[] args) {
